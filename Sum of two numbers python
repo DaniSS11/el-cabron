@@ -1,0 +1,29 @@
+# print message
+print "This program sums two numbers"
+# press enter to continue
+raw_input('Press enter to continue: ')
+
+
+# Function: Sum of 2 numbers
+def my_function():
+    # Enter 2 numbers
+    number1 = input("First number: ")
+    number2 = input("Second number: ")
+
+    # sum the numbers
+    output = number1 + number2
+    print "The sum of the numbers is: {}".format(output)
+
+    # Repeat program?
+    print "Would you like to do another sum"
+    again = (raw_input("Y/N: "))  # raw_input let us gave the variable 'again' a string value
+    # print "again: {}".format(again)
+    if again == 'y':  # if again == y then call the function
+        my_function()
+    if again == 'n':  # if again == n then finish the program
+        print "bye bye"
+
+
+# call the function
+my_function()
+
